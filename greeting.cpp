@@ -15,35 +15,44 @@ using namespace std;
 
 int main() {
 
-    string name;                                    // Name as string that should be greeted
-    char gender;                                    // Gender as a char of someone who should be greeted
+    string name;                                        // Name as string that should be greeted
+    char gender;                                        // Gender as a char of someone who should be greeted
 
     string txt;                                    
 
-    cout << "Greeting application\n\n";             // Title
+    cout << "Greeting application\n\n";                 // Title
 
 
-    cout << "Name:\t\t";  cin >> name;              // Get the name
+    cout << "Name:\t\t";  cin >> name;                  // Get the name
 
 lbl1:
 
-    cout << "Gender[m/f]:\t";  cin >> gender;        // Get the gender
+    cout << "Gender[m/f/d]:\t";  cin >> gender;         // Get the gender
 
     
-    if (gender == 'm') {                            // Check if gender is m for male
+    if (gender == 'm') {                                // Check if gender is m for male
 
         cout << "Hello Mr. " << name;
         
     }
     else {
-
-        if (gender == 'f') {                        // Check if gender is f for female
+                                             
+        if (gender == 'f') {                            // Check if gender is f for female
 
             cout << "Hello Mrs. " << name;
 
-        } else {                                    // If user input is not valid
+        } else {                                        // If gender is not f for male
 
-            goto lbl1;                              // Go back to code after lbl1
+            if (gender == 'd') {                        
+
+            cout << "Hello " << name;
+
+            } else {                                    // If user input is not valid
+
+                goto lbl1;                              // Go back to code after lbl1shop1.cpp
+
+            }
+            
 
         }
     }
