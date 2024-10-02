@@ -26,7 +26,7 @@ int main() {
 
     cout << "Operator[+ , -, *, /, ^2]: "; cin >> chosenOperator; cout << "\n"; // Get the operation
 
-    cout << "Number 1: ";  cin >> number1;    // Get the first number
+    cout << "Number 1: ";  cin >> number1;  // Get the first number
     cout << "Number 2: ";  cin >> number2;  // Get the second number
 
     cout << "\n";    // Print out a new line
@@ -37,8 +37,8 @@ int main() {
 
         // If the user-chosen operator is ^2 for a squaring, then execute this code:
 
-        string chosenNumber;        //     Variable to store a user-entered string for the
-                                    //    number which should be squared
+        string chosenNumber;        // Variable to store a user-entered string for the
+                                    // Number which should be squared
 
         cout << "Number[1, 2]: "; cin >> chosenNumber; cout << "\n";    // Get the chosen number
                                                                         // for selection as string
